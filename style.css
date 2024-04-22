@@ -38,47 +38,6 @@ header img {
     padding-top: 100px;
 }
 
-#beneficios h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #001B79;
-}
-
-#beneficios ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#beneficios ul li {
-    margin-bottom: 10px;
-    list-style-type: circle;
-    font-size: 18px;
-    color: black;
-}
-
-/* Estilo para a seção de serviços */
-#servicos {
-    padding: 50px 0;
-}
-
-#servicos h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #001B79;
-}
-
-#servicos ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#servicos ul li {
-    margin-bottom: 10px;
-    list-style-type: circle;
-    font-size: 18px;
-    color: black;
-}
-
 @keyframes pulse {
     0% {
       transform: scale(1);
@@ -166,7 +125,7 @@ section ul li {
     margin: 0 auto;
     display: block;
     margin-top: -20px;
-    width: 30%;
+    width: 60%;
 }
 
 .contato {
@@ -248,7 +207,6 @@ footer a {
     color: #fff;
 }
 
-
 @media (max-width: 768px) {
 
     body{
@@ -257,7 +215,7 @@ footer a {
     }
 
     header h1 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     header p {
