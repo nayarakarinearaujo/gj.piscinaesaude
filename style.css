@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(); /* Remova a URL da imagem de fundo */
+}
+
+.navbar .nav-link {
+    color: #131212;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo personalizado para ajustar a posição da navbar */
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Estilo personalizado para ajustar a posição do conteúdo do cabeçalho */
+.header-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+}
+
+/* Estilo para a seção de benefícios */
+#beneficios {
+    background-color: #d7eff8de;
+    padding: 30px 0;
+}
+
+#beneficios h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #001B79;
+}
+
+#beneficios ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#beneficios ul li {
+    margin-bottom: 10px;
+    list-style-type: circle;
+    font-size: 18px;
+    color: black;
+}
+
+/* Estilo para a seção de serviços */
+#servicos {
+    padding: 50px 0;
+}
+
+#servicos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #001B79;
+}
+
+#servicos ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#servicos ul li {
+    margin-bottom: 10px;
+    list-style-type: circle;
+    font-size: 18px;
+    color: black;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+header h1 {
+    animation: pulse 2s infinite;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    margin: 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #001B79;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    list-style-type: circle;
+}
+
+.paragrafo {
+    color:  #2b4c6e;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    text-align: center;
+}
+
+.sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    overflow: visible;
+    clip: auto;
+}
+
+.servicos-carousel {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.carousel-item img {
+    margin: auto;
+}
+
+.side-image {
+    margin: 0 auto;
+    display: block;
+    margin-top: -20px;
+    width: 30%;
+}
+
+.contato {
+    background-color: #b8e0f0de;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contatoForm input[type="text"],
+#contatoForm input[type="email"],
+#contatoForm input[type="tel"],
+#contatoForm textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     box-sizing: border-box;
+ }
+
+#contatoForm input[type="text"]:hover,
+#contatoForm input[type="email"]:hover,
+#contatoForm input[type="tel"]:hover,
+#contatoForm textarea:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #abd2fc;
+}
+
+#contatoForm button[type="submit"] {
+     width: 100%;
+     padding: 10px;
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+
+#contatoForm button[type="submit"]:hover {
+     background-color: #0056b3;
+ }
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+}
+
+.contato button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #0056b3;
+}
+
+footer div {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        position: static;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    body {
+        margin-left: 5px; 
+        margin-right: 5px; 
+    }
+
+    header h1 {
+        font-size: 16px;
+        top: 30%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+    }
+
+    header p {
+        font-size: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 360px) {
+
+    body {
+        margin-left: 2px; /* Adiciona uma margem ainda menor à esquerda */
+        margin-right: 2px; /* Adiciona uma margem ainda menor à direita */
+    }
+
+    header h1 {
+        font-size: 11px;
+        top: 40%; /* Posiciona o texto verticalmente no meio da tela */
+        left: 55px; /* Centraliza o texto horizontalmente */
+        transform: translate(-50%, -50%); /* Move o texto para o centro da tela */
+    }
+
+    header p {
+        font-size: 10px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header img {
+        width: 80%;
+    }
+}
