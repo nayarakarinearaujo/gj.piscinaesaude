@@ -90,7 +90,7 @@ section ul li {
 }
 
 .paragrafo {
-    color:  #2b4c6e;
+    color:  #335980;
     font-size: 18px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -134,36 +134,50 @@ section ul li {
     text-align: center;
 }
 
+#contatoForm textarea {
+    width: 100%;
+    padding: 10px; /* Adiciona espaçamento interno de 10px em todas as direções */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
 #contatoForm input[type="text"],
 #contatoForm input[type="email"],
 #contatoForm input[type="tel"],
 #contatoForm textarea {
-     width: 100%;
-     padding: 10px;
-     margin-bottom: 15px;
-     border: 1px solid #ccc;
-     border-radius: 5px;
-     box-sizing: border-box;
+    width: calc(100% - 20px); /* Define a largura do elemento como 100% menos 20px de margem em cada lado */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 10px; /* Margem à direita */
+    margin-left: 10px; /* Margem à esquerda */
  }
 
 #contatoForm input[type="text"]:hover,
 #contatoForm input[type="email"]:hover,
 #contatoForm input[type="tel"]:hover,
 #contatoForm textarea:hover {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #479efa;
+    box-shadow: 0 0 5px rgba(20, 130, 248, 0.5);
     background-color: #abd2fc;
 }
 
 #contatoForm button[type="submit"] {
-     width: 100%;
-     padding: 10px;
-     background-color: #007bff;
-     color: #fff;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
-     transition: background-color 0.3s;
+    width: calc(100% - 20px); 
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    margin-right: 10px; /* Margem à direita */
+    margin-left: 10px; /* Margem à esquerda */
  }
 
 #contatoForm button[type="submit"]:hover {
