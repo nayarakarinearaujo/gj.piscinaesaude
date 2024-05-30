@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(); /* Remova a URL da imagem de fundo */
 }
 
 .navbar .nav-link {
@@ -19,7 +18,7 @@ header {
 }
 
 header img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -89,6 +88,25 @@ section ul li {
     list-style-type: circle;
 }
 
+.container-servicos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-left: 6%;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Alinha itens no início do contêiner */
+    gap: 20px; /* Espaçamento entre a lista e a imagem */
+}
+
+.side-image {
+    max-width: 35%;
+    height: auto;
+    display: block;
+}
+
 .paragrafo {
     color:  #335980;
     font-size: 18px;
@@ -119,13 +137,6 @@ section ul li {
 
 .carousel-item img {
     margin: auto;
-}
-
-.side-image {
-    margin: 0 auto;
-    display: block;
-    margin-top: -20px;
-    width: 60%;
 }
 
 .contato {
@@ -221,42 +232,131 @@ footer a {
     color: #fff;
 }
 
-@media (max-width: 768px) {
+/* Estilos para telas de até 1440px */
+@media (max-width: 1440px) {
+    .navbar .nav-link {
+        font-size: 25px;
+    }
 
-    body{
+    header h1 {
+        font-size: 2rem;
+        top: 30%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Alinha o texto ao centro */
+        width: 90%; /* Para garantir que o texto não toque as bordas da tela */
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
+
+/* Estilos para telas de até 1024px */
+@media (max-width: 1024px) {
+    .navbar .nav-link {
+        font-size: 22px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+    
+}
+
+/* Estilos para telas de até 834px */
+@media (max-width: 834px) {
+    .navbar .nav-link {
+        font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+}
+
+/* Estilos para telas de até 768px */
+@media (max-width: 768px) {
+    body {
         margin-left: 10px;
         margin-right: 10px;
     }
 
     header h1 {
-        font-size: 24px;
+        font-size: 1.2rem;
+        top: 30%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Alinha o texto ao centro */
+        width: 90%; /* Para garantir que o texto não toque as bordas da tela */
     }
 
     header p {
         position: static;
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-image {
+        max-width: 50%;
+    }
+
+    .navbar .nav-link {
+        font-size: 18px;
+    }
+
 }
 
-@media (max-width: 576px) {
-
+/* Estilos para telas de até 480px */
+@media (max-width: 480px) {
     body {
-        margin-left: 5px; 
-        margin-right: 5px; 
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     header h1 {
-        font-size: 16px;
+        font-size: 0.8rem;
         top: 30%;
-        left: 15%;
+        left: 5%;
         transform: translate(-50%, -50%);
+        text-align: center; /* Alinha o texto ao centro */
+        width: 90%; /* Para garantir que o texto não toque as bordas da tela */
+    
     }
 
     header p {
-        font-size: 10px;
+        font-size: 0.8rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -265,20 +365,31 @@ footer a {
     header img {
         width: 80%;
     }
+
+    .navbar .nav-link {
+        font-size: 16px;
+    }
+
+    .collapse .navbar-collapse li {
+        font-size: 14px;
+    }
 }
 
+/* Estilos para telas de até 360px */
 @media (max-width: 360px) {
-
     body {
-        margin-left: 2px; /* Adiciona uma margem ainda menor à esquerda */
-        margin-right: 2px; /* Adiciona uma margem ainda menor à direita */
+        margin-left: 2px;
+        margin-right: 2px;
     }
 
     header h1 {
-        font-size: 11px;
-        top: 40%; /* Posiciona o texto verticalmente no meio da tela */
-        left: 55px; /* Centraliza o texto horizontalmente */
-        transform: translate(-50%, -50%); /* Move o texto para o centro da tela */
+        font-size: 0.8rem;
+        top: 30%;
+        left: 2%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        text-align: center; /* Alinha o texto ao centro */
+        width: 90%; /* Para garantir que o texto não toque as bordas da tela */
     }
 
     header p {
@@ -289,6 +400,8 @@ footer a {
     }
 
     header img {
-        width: 80%;
+        max-width:100%;
     }
+
+    
 }
