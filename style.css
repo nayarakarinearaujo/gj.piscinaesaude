@@ -1,9 +1,12 @@
+/* Importar a fonte do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap');
 
+/* Definir a fonte principal para o corpo do documento */
 body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Estilo para os links na barra de navegação */
 .navbar .nav-link {
     color: #131212;
     font-weight: bold;
@@ -11,18 +14,20 @@ body {
     font-size: 30px;
 }
 
+/* Estilo para o cabeçalho */
 header {
     position: relative;
     text-align: center;
     color: #fff;
 }
 
+/* Estilo para a imagem no cabeçalho */
 header img {
     max-width: 100%;
     height: auto;
 }
 
-/* Estilo personalizado para ajustar a posição da navbar */
+/* Estilo personalizado para a barra de navegação */
 .navbar {
     position: absolute;
     width: 100%;
@@ -37,18 +42,22 @@ header img {
     padding-top: 100px;
 }
 
+/* Animação de pulso para o texto no cabeçalho */
 @keyframes pulse {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilo para o texto no cabeçalho */
 header h1 {
     animation: pulse 2s infinite;
     position: absolute;
@@ -59,6 +68,7 @@ header h1 {
     margin: 0;
 }
 
+/* Estilo para o parágrafo no cabeçalho */
 header p {
     position: absolute;
     top: 60%;
@@ -68,47 +78,54 @@ header p {
     margin: 0;
 }
 
+/* Estilo para as seções */
 section {
     padding: 50px 0;
 }
 
+/* Estilo para os títulos das seções */
 section h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #001B79;
 }
 
+/* Estilo para as listas nas seções */
 section ul {
     list-style-type: none;
     padding-left: 0;
 }
 
+/* Estilo para os itens de lista nas seções */
 section ul li {
     margin-bottom: 10px;
     list-style-type: circle;
 }
 
+/* Estilo para o contêiner de serviços */
 .container-servicos {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    margin-left: 6%;
 }
 
+/* Estilo para o wrapper de conteúdo */
 .content-wrapper {
     display: flex;
-    align-items: flex-start; /* Alinha itens no início do contêiner */
-    gap: 20px; /* Espaçamento entre a lista e a imagem */
+    align-items: flex-start;
+    gap: 20px;
 }
 
-.side-image {
-    max-width: 35%;
+/* Estilo para imagens fluidas */
+.img-fluid {
+    max-width: 90%;
     height: auto;
     display: block;
 }
 
+/* Estilo para o parágrafo */
 .paragrafo {
-    color:  #335980;
+    color: #335980;
     font-size: 18px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -116,6 +133,7 @@ section ul li {
     text-align: center;
 }
 
+/* Estilo para o elemento sr-only */
 .sr-only {
     position: static;
     width: auto;
@@ -130,44 +148,50 @@ section ul li {
     clip: auto;
 }
 
+/* Estilo para o carrossel de serviços */
 .servicos-carousel {
     background-color: #f8f9fa;
     padding: 50px 0;
 }
 
+/* Estilo para as imagens do carrossel */
 .carousel-item img {
     margin: auto;
 }
 
+/* Estilo para a seção de contato */
 .contato {
     background-color: #b8e0f0de;
     padding: 50px 0;
     text-align: center;
 }
 
+/* Estilo para o formulário de contato */
 #contatoForm textarea {
     width: 100%;
-    padding: 10px; /* Adiciona espaçamento interno de 10px em todas as direções */
+    padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
+/* Estilo para os campos de entrada do formulário de contato */
 #contatoForm input[type="text"],
 #contatoForm input[type="email"],
 #contatoForm input[type="tel"],
 #contatoForm textarea {
-    width: calc(100% - 20px); /* Define a largura do elemento como 100% menos 20px de margem em cada lado */
+    width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    margin-right: 10px; /* Margem à direita */
-    margin-left: 10px; /* Margem à esquerda */
- }
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
+/* Estilo para os campos de entrada do formulário de contato ao passar o mouse */
 #contatoForm input[type="text"]:hover,
 #contatoForm input[type="email"]:hover,
 #contatoForm input[type="tel"]:hover,
@@ -177,8 +201,9 @@ section ul li {
     background-color: #abd2fc;
 }
 
+/* Estilo para o botão de envio do formulário de contato */
 #contatoForm button[type="submit"] {
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px);
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -187,14 +212,16 @@ section ul li {
     cursor: pointer;
     transition: background-color 0.3s;
     box-sizing: border-box;
-    margin-right: 10px; /* Margem à direita */
-    margin-left: 10px; /* Margem à esquerda */
- }
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
+/* Estilo para o botão de envio do formulário de contato ao passar o mouse */
 #contatoForm button[type="submit"]:hover {
-     background-color: #0056b3;
- }
+    background-color: #0056b3;
+}
 
+/* Estilo para os campos de entrada e textarea no formulário de contato */
 .contato input,
 .contato textarea {
     width: 100%;
@@ -205,6 +232,7 @@ section ul li {
     box-sizing: border-box;
 }
 
+/* Estilo para o botão no formulário de contato */
 .contato button {
     width: 100%;
     padding: 10px;
@@ -215,50 +243,6 @@ section ul li {
     cursor: pointer;
 }
 
-.contato button:hover {
-    background-color: #0056b3;
-}
-
-footer div {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer a {
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Estilos para telas de até 1440px */
-@media (max-width: 1440px) {
-    .navbar .nav-link {
-        font-size: 25px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-        top: 30%;
-        left: 5%;
-        transform: translate(-50%, -50%);
-        text-align: center; /* Alinha o texto ao centro */
-        width: 90%; /* Para garantir que o texto não toque as bordas da tela */
-    }
-
-    header img {
-        width: 80%;
-    }
-
-    header p {
-        font-size: 16px;
-    }
-
-    section h2 {
-        font-size: 26px;
-    }
-}
 
 /* Estilos para telas de até 1024px */
 @media (max-width: 1024px) {
@@ -267,7 +251,7 @@ footer a {
     }
 
     header h1 {
-        font-size: 32px;
+        font-size: 2.2rem;
     }
 
     header p {
@@ -277,7 +261,8 @@ footer a {
     section h2 {
         font-size: 24px;
     }
-    
+
+
 }
 
 /* Estilos para telas de até 834px */
@@ -287,7 +272,7 @@ footer a {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     header p {
@@ -297,6 +282,7 @@ footer a {
     section h2 {
         font-size: 22px;
     }
+
 }
 
 /* Estilos para telas de até 768px */
@@ -311,8 +297,10 @@ footer a {
         top: 30%;
         left: 5%;
         transform: translate(-50%, -50%);
-        text-align: center; /* Alinha o texto ao centro */
-        width: 90%; /* Para garantir que o texto não toque as bordas da tela */
+        text-align: center;
+        /* Alinha o texto ao centro */
+        width: 90%;
+        /* Para garantir que o texto não toque as bordas da tela */
     }
 
     header p {
@@ -328,13 +316,14 @@ footer a {
         align-items: center;
     }
 
-    .side-image {
+    .img-fluid {
         max-width: 50%;
     }
 
     .navbar .nav-link {
         font-size: 18px;
     }
+
 
 }
 
@@ -350,9 +339,11 @@ footer a {
         top: 30%;
         left: 5%;
         transform: translate(-50%, -50%);
-        text-align: center; /* Alinha o texto ao centro */
-        width: 90%; /* Para garantir que o texto não toque as bordas da tela */
-    
+        text-align: center;
+        /* Alinha o texto ao centro */
+        width: 90%;
+        /* Para garantir que o texto não toque as bordas da tela */
+
     }
 
     header p {
@@ -364,6 +355,10 @@ footer a {
 
     header img {
         width: 80%;
+    }
+
+    .img-fluid {
+        max-width: 50%;
     }
 
     .navbar .nav-link {
@@ -383,13 +378,15 @@ footer a {
     }
 
     header h1 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         top: 30%;
         left: 2%;
         transform: translate(-50%, -50%);
         padding: 10px;
-        text-align: center; /* Alinha o texto ao centro */
-        width: 90%; /* Para garantir que o texto não toque as bordas da tela */
+        text-align: center;
+        /* Alinha o texto ao centro */
+        width: 90%;
+        /* Para garantir que o texto não toque as bordas da tela */
     }
 
     header p {
@@ -400,8 +397,8 @@ footer a {
     }
 
     header img {
-        max-width:100%;
+        max-width: 100%;
     }
 
-    
+
 }

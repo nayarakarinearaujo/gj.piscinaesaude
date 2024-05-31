@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="imagens/Junior.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- SEO -->
+    <meta name="description" content="G J Piscina e Saúde oferece serviços profissionais de limpeza e manutenção de piscinas. Água cristalina, economia de tempo e esforço, e muito mais. Agende uma avaliação hoje mesmo!">
+
 </head>
 
 <body>
@@ -42,7 +45,7 @@
 
     <header>
         <img src="imagens/piscina-com-agua-azul-textura-da-superficie-da-agua-e-fundo-em-azulejo_101553-1099.jpg"
-            alt="Imagem de Cabeçalho">
+            alt="Piscina com água azul">
         <h1>Transforme sua piscina<br>em um oásis de tranquilidade com <br> a <strong> G J Piscina e Saúde</strong>!!!
         </h1>
     </header>
@@ -72,18 +75,22 @@
 
 
     <section id="servicos" class="servicos">
-        <div class="container-servicos">
-            <h2>SERVIÇOS OFERECIDOS</h2>
-            <div class="content-wrapper">
-                <ul>
-                    <li>Limpeza de piscina com 2 visitas semanais</li>
-                    <li>Limpeza de espelhos d'água</li>
-                    <li>Manutenção, conserto e substituição de motobombas e filtros</li>
-                    <li>Troca de areia de filtro</li>
-                    <li>Consultoria presencial e a distância</li>
-                    <li>Venda de produtos químicos e acessórios</li>
-                </ul>
-                <img class="side-image" src="imagens/pexels-scott-webb-136040.jpg" alt="Imagem lateral">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>SERVIÇOS OFERECIDOS</h2>
+                    <ul>
+                        <li>Limpeza de piscina com 2 visitas semanais</li>
+                        <li>Limpeza de espelhos d'água</li>
+                        <li>Manutenção, conserto e substituição de motobombas e filtros</li>
+                        <li>Troca de areia de filtro</li>
+                        <li>Consultoria presencial e a distância</li>
+                        <li>Venda de produtos químicos e acessórios</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="imagens/pexels-scott-webb-136040.jpg" alt="Imagem lateral">
+                </div>
             </div>
         </div>
     </section>
@@ -173,8 +180,6 @@
                 <img src="imagens/gmail.png" alt="E-mail"> E-mail: junior-manutencaodepiscinas@hotmail.com
             </p>
 
-
-
             <p>&copy; 2024 Giseldo Júnior - Piscineiro Profissional</p>
 
         </div>
@@ -184,6 +189,38 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+
+     <!-- JSON-LD para SEO -->
+     <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          "name": "G J Piscina e Saúde",
+          "image": "https://www.gjpiscinaesaude.com.br/imagens/Junior.png",
+          "@id": "https://www.gjpiscinaesaude.com.br",
+          "url": "https://www.gjpiscinaesaude.com.br",
+          "telephone": "(019) 99960-6402",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Campinas",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          },
+          "description": "G J Piscina e Saúde oferece serviços profissionais de limpeza e manutenção de piscinas. Água cristalina, economia de tempo e esforço, e muito mais. Agende uma avaliação hoje mesmo!",
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+          }]
+        }
+        </script>
 </body>
 
 </html>
