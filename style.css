@@ -11,11 +11,18 @@ body {
 }
 
 /* Estilo para os links na barra de navegação */
-.navbar .nav-link {
-    color: #131212;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
+.nav-item a {
+    color: #001B79 !important;
+    font-weight: bold !important;
+    /* font-size: 30px !important; */
+    transition: transform 0.3s ease-in-out !important;
+    /* Adiciona uma transição suave para o efeito de hover */
+}
+
+.nav-item a:hover {
+    color: #55659e !important;
+    transform: translateY(-5px)!important;
+    /* Adiciona um efeito de translação para cima no hover */
 }
 
 /* Estilo para o cabeçalho */
@@ -114,6 +121,22 @@ section ul li {
     padding: 0 20px;
 }
 
+/* Estilo para a seção de benefícios */
+.benefits {
+    box-shadow: 0px 0px 10px rgba(6, 31, 112, 0.5);
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: justify;
+    text-align: left;
+}
+
+/* Estilo para as listas de benefícios */
+.benefits ul {
+    margin-left: 10px;
+}
+
 /* Estilo para o wrapper de conteúdo */
 .content-wrapper {
     display: flex;
@@ -130,12 +153,11 @@ section ul li {
 
 /* Estilo para o parágrafo */
 .paragrafo {
-    color: #335980;
-    font-size: 18px;
+    color: #335980; 
+    font-size: 20px; 
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
     text-align: center;
+
 }
 
 /* Estilo para o elemento sr-only */
@@ -159,6 +181,31 @@ section ul li {
     padding: 50px 0;
 }
 
+/* Estilo para os itens de serviço */
+.service-item {
+    list-style: none; /* Remove o marcador padrão da lista */
+    padding-left: 20px; /* Adiciona um espaço à esquerda para a imagem */
+    background-image: url('imagens/gota.icon.png'); /* Define a imagem de fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: left center; /* Posiciona a imagem à esquerda e centralizada verticalmente */
+    background-size: 16px 16px; /* Ajusta o tamanho da imagem */
+    line-height: 1.5; /* Ajusta a altura da linha para centralizar o texto verticalmente */
+    margin-bottom: 10px; /* Adiciona um espaço entre os itens da lista */
+    padding-left: 30px; /* Ajusta o espaço à esquerda para a imagem */
+}
+
+/* Estilo para os itens de benefício */
+.benefit-item {
+    list-style: none;
+    padding-left: 30px;
+    background-image: url('imagens/gota.icon.png'); 
+    background-repeat: no-repeat;
+    background-position: left center; 
+    background-size: 16px 16px;
+    line-height: 1.5; 
+    margin-bottom: 10px; 
+}
+
 /* Estilo para as imagens do carrossel */
 .carousel-item img {
     margin: auto;
@@ -166,7 +213,7 @@ section ul li {
 
 /* Estilo para a seção de contato */
 .contato {
-    background-color: #b8e0f0de;
+    background-color: #b8e0f0de; 
     padding: 50px 0;
     text-align: center;
 }
@@ -265,267 +312,4 @@ footer a {
     margin-bottom: 10px;
     text-decoration: none;
     color: #fff;
-}
-
-/* Estilos para telas maiores que 1440px */
-@media (min-width: 1441px) {
-
-    /* Adicione seus estilos para telas maiores que 1440px aqui */
-    .navbar .nav-link {
-        font-size: 30px;
-    }
-
-    header h1 {
-        font-size: 3rem;
-        top: 30%;
-        left: 5%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        width: 90%;
-    }
-
-    header img {
-        width: 80%;
-    }
-
-    .container-servicos {
-        margin-left: calc((100% - 1200px) / 2);
-        /* Calcula a margem esquerda para centralizar o contêiner */
-    }
-
-    /* Adicionando uma largura máxima e centralizando o formulário de contato */
-    #contato .contato {
-        max-width: 600px;
-        /* Defina a largura máxima desejada */
-        margin: 0 auto;
-        /* Centraliza o contêiner */
-        padding: 0 20px;
-        /* Adiciona um espaçamento interno para evitar que o formulário fique muito próximo das bordas */
-    }
-
-    /* Defina a largura máxima dos campos de entrada */
-    #contatoForm input[type="text"],
-    #contatoForm input[type="email"],
-    #contatoForm input[type="tel"],
-    #contatoForm textarea {
-        max-width: 100%;
-        /* Define a largura máxima para preencher o contêiner */
-    }
-
-    /* Ajuste os estilos do botão de envio se necessário */
-    #contatoForm button[type="submit"] {
-        width: 100%;
-        /* Ocupa a largura completa do contêiner */
-    }
-
-}
-
-/* Estilos para telas de até 1440px */
-@media (max-width: 1440px) {
-    .navbar .nav-link {
-        font-size: 25px;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-        top: 30%;
-        left: 5%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        /* Alinha o texto ao centro */
-        width: 90%;
-        /* Para garantir que o texto não toque as bordas da tela */
-    }
-
-    header img {
-        width: 80%;
-    }
-
-    header p {
-        font-size: 16px;
-    }
-
-    section h2 {
-        font-size: 26px;
-    }
-
-    /* Adicionando uma largura máxima e centralizando o formulário de contato */
-    #contato .contato {
-        max-width: 600px; /* Defina a largura máxima desejada */
-        margin: 0 auto; /* Centraliza o contêiner */
-        padding: 0 20px; /* Adiciona um espaçamento interno para evitar que o formulário fique muito próximo das bordas */
-    }
-
-    /* Defina a largura máxima dos campos de entrada */
-    #contatoForm input[type="text"],
-    #contatoForm input[type="email"],
-    #contatoForm input[type="tel"],
-    #contatoForm textarea {
-        max-width: 100%; /* Define a largura máxima para preencher o contêiner */
-    }
-
-    /* Ajuste os estilos do botão de envio se necessário */
-    #contatoForm button[type="submit"] {
-        width: 100%; /* Ocupa a largura completa do contêiner */
-    }
-
-}
-
-/* Estilos para telas de até 1024px */
-@media (max-width: 1024px) {
-    .navbar .nav-link {
-        font-size: 22px;
-    }
-
-    header h1 {
-        font-size: 2.2rem;
-    }
-
-    header p {
-        font-size: 15px;
-    }
-
-    section h2 {
-        font-size: 24px;
-    }
-
-
-}
-
-/* Estilos para telas de até 834px */
-@media (max-width: 834px) {
-    .navbar .nav-link {
-        font-size: 20px;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    header p {
-        font-size: 14px;
-    }
-
-    section h2 {
-        font-size: 22px;
-    }
-
-}
-
-/* Estilos para telas de até 768px */
-@media (max-width: 768px) {
-    body {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    header h1 {
-        font-size: 1rem;
-        top: 30%;
-        left: 5%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        /* Alinha o texto ao centro */
-        width: 90%;
-        /* Para garantir que o texto não toque as bordas da tela */
-    }
-
-    header p {
-        position: static;
-        text-align: center;
-        font-size: 13px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-fluid {
-        max-width: 50%;
-    }
-
-    .navbar .nav-link {
-        font-size: 18px;
-    }
-
-
-}
-
-/* Estilos para telas de até 480px */
-@media (max-width: 480px) {
-    body {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    header h1 {
-        font-size: 0.8rem;
-        top: 30%;
-        left: 5%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        /* Alinha o texto ao centro */
-        width: 90%;
-        /* Para garantir que o texto não toque as bordas da tela */
-
-    }
-
-    header p {
-        font-size: 0.8rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    header img {
-        width: 80%;
-    }
-
-    .img-fluid {
-        max-width: 50%;
-    }
-
-    .navbar .nav-link {
-        font-size: 16px;
-    }
-
-    .collapse .navbar-collapse li {
-        font-size: 14px;
-    }
-}
-
-/* Estilos para telas de até 360px */
-@media (max-width: 360px) {
-    body {
-        margin-left: 2px;
-        margin-right: 2px;
-    }
-
-    header h1 {
-        font-size: 0.8rem;
-        top: 30%;
-        left: 2%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        text-align: center;
-        /* Alinha o texto ao centro */
-        width: 90%;
-        /* Para garantir que o texto não toque as bordas da tela */
-    }
-
-    header p {
-        font-size: 10px;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    header img {
-        max-width: 100%;
-    }
-
-
 }

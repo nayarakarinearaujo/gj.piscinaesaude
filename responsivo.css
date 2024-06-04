@@ -1,0 +1,256 @@
+
+/* Estilos para telas maiores que 1440px */
+@media (min-width: 1441px) {
+
+    /* Adicione seus estilos para telas maiores que 1440px aqui */
+    .navbar .nav-link {
+        font-size: 30px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        top: 30%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    .container-servicos {
+        margin-left: calc((100% - 1200px) / 2);
+        /* Calcula a margem esquerda para centralizar o contêiner */
+    }
+
+    /* Adicionando uma largura máxima e centralizando o formulário de contato */
+    #contato .contato {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Defina a largura máxima dos campos de entrada */
+    #contatoForm input[type="text"],
+    #contatoForm input[type="email"],
+    #contatoForm input[type="tel"],
+    #contatoForm textarea {
+        max-width: 100%;
+    }
+
+    /* Ajuste os estilos do botão de envio se necessário */
+    #contatoForm button[type="submit"] {
+        width: 100%;
+    }
+
+}
+
+/* Estilos para telas de até 1440px */
+@media (max-width: 1440px) {
+    .navbar .nav-link {
+        font-size: 25px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        top: 30%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    /* Adicionando uma largura máxima e centralizando o formulário de contato */
+    #contato .contato {
+        max-width: 600px; /* Defina a largura máxima desejada */
+        margin: 0 auto; /* Centraliza o contêiner */
+        padding: 0 20px; /* Adiciona um espaçamento interno para evitar que o formulário fique muito próximo das bordas */
+    }
+
+    /* Defina a largura máxima dos campos de entrada */
+    #contatoForm input[type="text"],
+    #contatoForm input[type="email"],
+    #contatoForm input[type="tel"],
+    #contatoForm textarea {
+        max-width: 100%; /* Define a largura máxima para preencher o contêiner */
+    }
+
+    /* Ajuste os estilos do botão de envio se necessário */
+    #contatoForm button[type="submit"] {
+        width: 100%; /* Ocupa a largura completa do contêiner */
+    }
+
+}
+
+/* Estilos para telas de até 1024px */
+@media (max-width: 1024px) {
+    .navbar .nav-link {
+        font-size: 22px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+
+}
+
+/* Estilos para telas de até 834px */
+@media (max-width: 834px) {
+    .navbar .nav-link {
+        font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+}
+
+/* Estilos para telas de até 768px */
+@media (max-width: 768px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        top: 30%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        /* Alinha o texto ao centro */
+        width: 90%;
+        /* Para garantir que o texto não toque as bordas da tela */
+    }
+
+    header p {
+        position: static;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-fluid {
+        max-width: 50%;
+    }
+
+    .navbar .nav-link {
+        font-size: 18px;
+    }
+
+
+}
+
+/* Estilos para telas de até 480px */
+@media (max-width: 480px) {
+    body {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    header h1 {
+        font-size: 1rem;
+        top: 30%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        /* Alinha o texto ao centro */
+        width: 90%;
+        /* Para garantir que o texto não toque as bordas da tela */
+
+    }
+
+    header p {
+        font-size: 0.8rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    .img-fluid {
+        max-width: 50%;
+    }
+
+    .navbar .nav-link {
+        font-size: 16px;
+    }
+
+    .collapse .navbar-collapse li {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para telas de até 360px */
+@media (max-width: 360px) {
+    body {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    header h1 {
+        font-size: 0.8rem;
+        top: 30%;
+        left: 2%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        text-align: center;
+        /* Alinha o texto ao centro */
+        width: 90%;
+        /* Para garantir que o texto não toque as bordas da tela */
+    }
+
+    header p {
+        font-size: 10px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header img {
+        max-width: 100%;
+    }
+
+
+}
