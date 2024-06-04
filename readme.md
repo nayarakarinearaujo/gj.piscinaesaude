@@ -49,7 +49,7 @@ Esta estrutura modular e bem organizada nos permite manter o código limpo, faci
 >>>>>>> e6d54dc2c6ff855b54ff7e103ff67d9e961a1c2e
 
 ## Como Executar o Projeto
-[Demo](https://www.gjpiscinaesaude.com.br/)
+Link do projeto: [Demo](https://www.gjpiscinaesaude.com.br/)
 
 <<<<<<< HEAD
 
