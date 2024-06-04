@@ -6,6 +6,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.logo {
+    width: 10%;
+}
+
 /* Estilo para os links na barra de navegação */
 .navbar .nav-link {
     color: #131212;
@@ -23,7 +27,7 @@ header {
 
 /* Estilo para a imagem no cabeçalho */
 header img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
@@ -66,6 +70,7 @@ header h1 {
     transform: translate(-50%, -50%);
     font-size: 40px;
     margin: 0;
+    
 }
 
 /* Estilo para o parágrafo no cabeçalho */
