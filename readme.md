@@ -6,8 +6,6 @@
 3. [Estrutura do Projeto](#estrutura-do-projeto)
 4. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 5. [Como Executar o Projeto](#como-executar-o-projeto)
-6. [Contribuição](#contribuição)
-7. [Contato](#contato)
 
 ## Visão Geral
 Este é o site da empresa "G J Piscina e Saúde", especializada em serviços de manutenção e limpeza de piscinas. Nosso objetivo é transformar sua piscina em um oásis de tranquilidade, proporcionando água cristalina e segura para você e sua família.
@@ -32,3 +30,7 @@ Este é o site da empresa "G J Piscina e Saúde", especializada em serviços de 
 ![Logo JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ![Logo Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+## Como Executar o Projeto
+[Demo](https://www.gjpiscinaesaude.com.br/)
+
