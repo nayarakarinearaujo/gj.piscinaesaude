@@ -40,7 +40,7 @@ Esta estrutura modular e bem organizada nos permite manter o código limpo, faci
 ![Logo HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Logo JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Logo Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Logo Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
 
 ## Como Executar o Projeto
 Link do projeto: [Demo](https://www.gjpiscinaesaude.com.br/)
