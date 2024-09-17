@@ -65,3 +65,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cria uma instância da classe FormHandler para lidar com o formulário de contato
     const formHandler = new FormHandler();
 });
+
+//Scroll suave do navbar para section
+
+function intitScrollSuave() {
+
+    const internalLinks = document.querySelectorAll('.js-menu a[href^="#"]');
+
+    function scrollToSection(event) {
+        event.preventDefault();
+        const href = event.currentTarget.getAttribute("href");
+        const section = document.querySelector(href);
+
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    }
+
+        internalLinks.forEach((link) => {
+            link.addEventListener("click", scrollToSection);
+        });
+    }
+
+
+intitScrollSuave();
