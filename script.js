@@ -90,5 +90,7 @@ function intitScrollSuave() {
         });
     }
 
-
 intitScrollSuave();
+
+const currentYear = document.getElementById("footer");
+currentYear.innerHTML = `&copy; ${new Date().getFullYear()} Giseldo Júnior - Piscineiro Profissional`
